@@ -54,9 +54,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class CameraActivity extends Activity implements SensorEventListener {
+public class CameraCustomActivity extends Activity implements SensorEventListener {
 
-    private static final String TAG = "CameraActivity";
+    private static final String TAG = "CameraCustomActivity";
 
     private SurfaceView preview;
     private SurfaceHolder previewHolder = null;
@@ -339,7 +339,7 @@ public class CameraActivity extends Activity implements SensorEventListener {
     }
 
     private float pxFromDp(float dp) {
-        return dp * CameraActivity.this.getResources().getDisplayMetrics().density;
+        return dp * CameraCustomActivity.this.getResources().getDisplayMetrics().density;
     }
 
     void restartPreview(int isFront) {

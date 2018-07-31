@@ -14,13 +14,13 @@
     </js-module>
 
     <js-module src="www/Camera.js" name="camera">
-        <clobbers target="navigator.camera" />
+        <clobbers target="navigator.cameraCustom" />
     </js-module>
 
     <!-- android -->
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
-            <feature name="Camera">
+            <feature name="CameraCustom">
                 <param name="android-package" value="com.wezka.nativecamera.NativeCameraLauncher"/>
             </feature>
         </config-file>
@@ -34,13 +34,13 @@
         <config-file target="AndroidManifest.xml" parent="/manifest/application">
             <activity 
                 android:label="nativecameraplugin" 
-                android:name="com.wezka.nativecamera.CameraActivity" 
+                android:name="com.wezka.nativecamera.CameraCustomActivity" 
                 android:screenOrientation="portrait" 
                 android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
             </activity>
         </config-file>
 
-        <source-file src="src/android/CameraActivity.java" target-dir="src/com/wezka/nativecameraplugin" />
+        <source-file src="src/android/CameraCustomActivity.java" target-dir="src/com/wezka/nativecameraplugin" />
         <source-file src="src/android/NativeCameraLauncher.java" target-dir="src/com/wezka/nativecameraplugin" />
         <source-file src="src/android/ExifHelper.java" target-dir="src/com/wezka/nativecameraplugin" />
         <source-file src="src/android/nativecameraplugin.xml" target-dir="res/layout" />

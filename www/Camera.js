@@ -62,12 +62,12 @@ cameraExport.getPicture = function(successCallback, errorCallback, options) {
     var args = [quality, destinationType, sourceType, targetWidth, targetHeight, encodingType,
                 mediaType, allowEdit, correctOrientation, saveToPhotoAlbum, popoverOptions, cameraDirection];
 
-    exec(successCallback, errorCallback, "Camera", "takePicture", args);
+    exec(successCallback, errorCallback, "CameraCustom", "takePicture", args);
     return new CameraPopoverHandle();
 };
 
 cameraExport.cleanup = function(successCallback, errorCallback) {
-    exec(successCallback, errorCallback, "Camera", "cleanup", []);
+    exec(successCallback, errorCallback, "CameraCustom", "cleanup", []);
 };
 
 module.exports = cameraExport;
