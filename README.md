@@ -1,3 +1,10 @@
+Note :
+
+with this plugin you don't need to Uninstall cordova plugin camera, you can use both simultaneously.
+use `navigator.cameraCustom` for this plugin, same functionality.
+
+==========================
+
 com.wezka.nativecamera
 ==========================
 
@@ -14,7 +21,3 @@ To install this plugin, follow the [Command-line Interface Guide](http://cordova
 
 If you are not using the Cordova Command-line Interface, follow [Using Plugman to Manage Plugins](http://cordova.apache.org/docs/en/edge/guide_plugin_ref_plugman.md.html).
 
-usage :
-
-with this plugin you don't need to Uninstall cordova plugin camera, you can use both simultaneously.
-use `navigator.cameraCustom` for this plugin, same functionality.
